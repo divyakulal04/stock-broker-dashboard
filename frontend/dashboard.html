@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Stock Dashboard</h2>
+
+<select id="stockSelect">
+  <option value="GOOG">GOOG</option>
+  <option value="TSLA">TSLA</option>
+  <option value="AMZN">AMZN</option>
+  <option value="META">META</option>
+  <option value="NVDA">NVDA</option>
+</select>
+
+<button onclick="subscribe()">Subscribe</button>
+
+<h3>Subscribed Stocks</h3>
+<ul id="stockList"></ul>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
